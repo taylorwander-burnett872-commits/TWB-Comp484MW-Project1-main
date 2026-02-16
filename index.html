@@ -1,3 +1,13 @@
+<!-- 
+    3 Elements and 3 Attributes:
+    <hr> - Used to separate content and create a visual break in the page. It is used multiple times throughout the website to divide sections and improve readability.
+    <q> - Used to indicate a short inline quotation. It is used in the article about Umbrella's support for the Raccoon City Police Department to quote Police Chief Brian Irons.
+    <object> - Used to embed multimedia content such as images. It is used in the article about the mysterious illness to display an image of the Umbrella Supplements and the Image of the First Aid Spray alongside the text.
+    hreflang - Indicates the language of the linked resource. It is used in the navigation links in the headerto specify that the linked pages are in English.
+    dir - Specifies the text direction for the content. It is used in the history page to set the text direction to right-to-left for a specific paragraph, creating a unique visual effect.
+    decoding - Provides a hint to the browser about how to decode the image. It is used in the news page for the microscope image to specify that it should be decoded synchronously, ensuring that it is displayed as soon as it is loaded.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,10 +23,10 @@
             <div class="hmiddle">
                 <img src="Images\Umbrella_logo_banner.png" alt="logo" height="50"/>
                 <div class="button_container" role="navigation">
-                    <a href="index.html"><button class="nav_button" onmouseover="" style="cursor: pointer;">Home</button></a>
-                    <a href="news.html"><button class="nav_button" onmouseover="" style="cursor: pointer;">News</button></a>
-                    <a href="history.html"><button class="nav_button" onmouseover="" style="cursor: pointer;">History</button></a>
-                    <a href="directory.html"><button class="nav_button" onmouseover="" style="cursor: pointer;">Directory</button></a>
+                    <a href="index.html" hreflang="en"><button class="nav_button" onmouseover="" style="cursor: pointer;">Home</button></a>
+                    <a href="news.html" hreflang="en"><button class="nav_button" onmouseover="" style="cursor: pointer;">News</button></a>
+                    <a href="history.html" hreflang="en"><button class="nav_button" onmouseover="" style="cursor: pointer;">History</button></a>
+                    <a href="directory.html" hreflang="en"><button class="nav_button" onmouseover="" style="cursor: pointer;">Directory</button></a>
                 </div>
             </div>
             <div class="hbottom"></div>
@@ -25,7 +35,7 @@
             <div class="hero-content">
                 <h1>Preserving the Health of the People</h1>
                 <p>Pioneering broad and effective solutions for a better tomorrow</p>
-                <a href="news.html" class="cta-button">See the Latest Developments &rarr;</a>
+                <a href="news.html" hreflang="en" class="cta-button">See the Latest Developments &rarr;</a>
             </div>
         </div>
         <main role="main">
@@ -46,14 +56,14 @@
             </article>
             <h1>EXPLORE UMBRELLA</h1>
             <div class="nav_container">
-                    <a href="news.html"><img src="Images/Umbrella%20Flag.png" alt="News" class="selectable_image"></a>
-                    <a href="history.html"><img src="Images/Umbrella%20History.png" alt="History" class="selectable_image"></a>
-                    <a href="directory.html"><img src="Images/Umbrella%20Scientist.png" alt="Directory" class="selectable_image"></a>
+                    <a href="news.html" hreflang="en"><img src="Images/Umbrella%20Flag.png" alt="News" class="selectable_image"></a>
+                    <a href="history.html" hreflang="en"><img src="Images/Umbrella%20History.png" alt="History" class="selectable_image"></a>
+                    <a href="directory.html" hreflang="en"><img src="Images/Umbrella%20Scientist.png" alt="Directory" class="selectable_image"></a>
             </div>
             <div class="desc_container">
-                <div class="bb1"><a href="news.html"><p class="description">VIEW THE LATEST UPDATES</p></a></div>
-                <div class="bb2"><a href="history.html"><p class="description">DIVE INTO OUR HISTORY</p></a></div>
-                <div class="bb3"><a href="directory.html"><p class="description">MEET SOME OF OUR TEAM</p></a></div>
+                <div class="bb1"><a href="news.html" hreflang="en"><p class="description">VIEW THE LATEST UPDATES</p></a></div>
+                <div class="bb2"><a href="history.html" hreflang="en"><p class="description">DIVE INTO OUR HISTORY</p></a></div>
+                <div class="bb3"><a href="directory.html" hreflang="en"><p class="description">MEET SOME OF OUR TEAM</p></a></div>
             </div>
             <hr>
             <div class ="pad"></div>
@@ -66,7 +76,7 @@
                 Cutting Edge Research<br>
                 Global Opportunities<br><br>
                 If any or all of these values resonate with you, then we encourage you to consider joining our team!<br><br>
-                <a href="careers.html" class="apply_link">DISCOVER OPPORTUNITIES AT UMBRELLA CORPORATION</a>
+                <a href="careers.html" hreflang="en"class="apply_link">DISCOVER OPPORTUNITIES AT UMBRELLA CORPORATION</a>
             </div>
         </main> 
         <div class="ftop"></div>
