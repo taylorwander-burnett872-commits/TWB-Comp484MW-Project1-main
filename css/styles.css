@@ -30,6 +30,16 @@ body {
     margin: 0 auto;
 }
 
+.htop img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    align-items: center;
+}
+
 .hmiddle {
     background: rgb(120,120,120);
     width: 100%;
@@ -39,6 +49,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 10vh;
 }
 
 .button_container{
@@ -49,32 +60,6 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-@media (max-width: 700px) {
-    .hmiddle {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 0;
-    }
-    .button_container {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        gap: 5px;
-    }
-    .nav_button {
-        width: 100%;
-        font-size: 1em;
-    }
-    .hero-section {
-        height: auto;
-        padding: 40px 0;
-    }
-    .content {
-        width: 95%;
-        font-size: 1.1em;
-    }
-}
-
 
 .nav_button{
     background: rgb(255, 255, 255);
@@ -89,7 +74,6 @@ body {
 
 }
 
-/* Responsive main logo */
 .center {
     display: block;
     margin-left: auto;
@@ -133,20 +117,14 @@ h1{
 }
 
 .nav_container{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    gap: 80px;
+    justify-content: space-evenly;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    max-width: 1200px;
-    min-width: 0;
-    height: auto;
-    padding-top: 60px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    gap: 30px;
-    justify-content: center;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 80px;
 }
 
 .selectable_image{
@@ -162,61 +140,9 @@ h1{
     display: block;
 }
 
-@media (max-width: 900px) {
-    .center {
-        width: 70vw;
-        max-width: 95vw;
-    }
-    .nav_container {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        gap: 20px;
-    }
-    .selectable_image {
-        max-width: 95vw;
-        width: 100%;
-        height: 38vw;
-        min-height: 120px;
-        max-height: 220px;
-    }
-    .desc_container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        width: 95vw;
-        padding-bottom: 20px;
-    }
-    .bb1, .bb2, .bb3 {
-        max-width: 95vw;
-        min-width: 0;
-    }
-    .description {
-        font-size: 1em;
-    }
-
-    .newspreviewcont{
-        margin-right: 50px;
-    }
-}
-
 
 .selectable_image:hover{
     box-shadow: 0px 12px 24px rgba(0,0,0,0.3);
-}
-
-.desc_container{
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    max-width: 1200px;
-    min-width: 0;
-    padding-right: 0;
-    padding-bottom: 40px;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .description{
